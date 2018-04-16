@@ -1,5 +1,5 @@
 from unittest import TestCase
-from filler import line_to_pinyin
+from filler import line_to_pinyin, is_chinese
 
 
 class FillerTest(TestCase):
@@ -8,4 +8,10 @@ class FillerTest(TestCase):
         chinese_text = "波兰人"
         pinyined = line_to_pinyin(chinese_text)
         self.assertEquals(pinyined, "bōlánrén")
+
+    def test_can_discern_if_line_is_chinese(self):
+        chinese_line = "波兰人"
+        not_chinese_line = "This is not Chinese!"
+        self.assertFalse(is_chinese(not_chinese_line))
+        self.assertTrue(is_chinese(chinese_line))
 
