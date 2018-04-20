@@ -26,10 +26,3 @@ def process_file(filename):
             else:
                 print(line)
 
-
-if __name__ == '__main__':
-    import sys
-    args = sys.argv
-    filename = args[1]
-    process_file(filename)
-

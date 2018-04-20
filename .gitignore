@@ -1,3 +1,7 @@
 __pycache__
 .cache
 *.txt
+.idea
+pinmix.egg-info
+build
+dist

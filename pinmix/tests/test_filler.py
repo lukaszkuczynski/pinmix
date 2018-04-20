@@ -1,5 +1,5 @@
 from unittest import TestCase
-from filler import line_to_pinyin, is_chinese
+from pinmix.filler import line_to_pinyin, is_chinese
 
 
 class FillerTest(TestCase):
@@ -7,7 +7,7 @@ class FillerTest(TestCase):
     def test_line_is_converted(self):
         chinese_text = "波兰人"
         pinyined = line_to_pinyin(chinese_text)
-        self.assertEquals(pinyined, "bōlánrén")
+        self.assertEqual(pinyined, "bōlánrén")
 
     def test_can_discern_if_line_is_chinese(self):
         chinese_line = "波兰人"
