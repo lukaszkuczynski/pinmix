@@ -5,6 +5,5 @@ Tool that mixes your Chinese text with Pinyin transcription, helping you to read
 ## Usage
 
 ```bash
-pip install pinmix
 pinmix file.txt
 ```
