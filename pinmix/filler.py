@@ -16,7 +16,7 @@ def is_chinese(line):
     return len(matches) > 0
 
 def process_file(filename):
-    with open(filename) as f:
+    with open(filename, encoding='utf8') as f:
         lines = f.readlines()
         for line in lines:
             line = line.strip()
